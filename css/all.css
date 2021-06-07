@@ -17,9 +17,9 @@
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
   --bs-gray: #6c757d;
+  --bs-gray-200: #e8e8db;
   --bs-gray-700: #494846;
   --bs-gray-800: #373A3C;
-  --bs-gray-200: #e8e8db;
   --bs-primary: #0d6efd;
   --bs-secondary: #858377;
   --bs-success: #198754;
@@ -186,7 +186,7 @@ strong {
 }
 
 small, .small {
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 mark, .mark {
@@ -4607,6 +4607,11 @@ fieldset:disabled .btn {
   list-style: none;
 }
 
+.nav .active {
+  font-weight: bold;
+  border-bottom: 2px solid #ffc107;
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -8729,6 +8734,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important;
 }
 
+.fs-sm {
+  font-size: 0.875rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -12058,11 +12067,6 @@ fieldset:disabled .btn {
   }
 }
 
-.nav .active {
-  font-weight: bold;
-  border-bottom: 2px solid #ffc107;
-}
-
 .top-nav {
   top: 82px;
 }
@@ -12117,10 +12121,6 @@ fieldset:disabled .btn {
   }
 }
 
-.custom-icons {
-  margin-right: 16px;
-}
-
 @media (max-width: 575.98px) {
   .custom-icons img {
     width: 20px;
@@ -12131,34 +12131,21 @@ fieldset:disabled .btn {
   }
 }
 
-.comment-title {
-  line-height: 29px;
-  font-size: 20px;
-  text-decoration: none;
-  color: #494846;
-}
-
-@media (max-width: 575.98px) {
-  .comment-title {
-    font-size: 16px;
-  }
-}
-
-.comment-date {
-  line-height: 20px;
-  font-size: 14px;
-  margin-top: 4px;
-  letter-spacing: 2px;
-}
-
-@media (max-width: 575.98px) {
-  .comment-date {
-    font-size: 12px;
-  }
-}
-
 .card-icon {
   width: 30px;
   height: 30px;
+  line-height: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .fs-sm {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .fs-5 {
+    font-size: 16px !important;
+  }
 }
 /*# sourceMappingURL=all.css.map */

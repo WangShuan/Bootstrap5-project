@@ -1,2 +1,83 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import "./custom.scss";
+
+// catch nav height to use in 逼人贊助卡片區塊
+.top-nav {
+  top: 82px;
+}
+.h-100vh-nav {
+  height: calc(100vh - 82px);
+}
+
+// change hover
+.btn-warning-hover {
+  color: $dark;
+  &:hover {
+    background-color: $danger;
+    color: #fff;
+    border-color: $danger;
+  }
+}
+.btn-outline-secondary-hover:hover {
+  &:hover {
+    background-color: $warning;
+    border-color: $warning;
+    color: $secondary;
+    & > .custom-heart {
+      color: $danger;
+    }
+  }
+  & > i {
+    color: $secondary;
+  }
+}
+
+// change accordion
+.accordion-button:not(.collapsed) {
+  background: none;
+  color: $dark;
+  &::after {
+    filter: grayscale(100%);
+  }
+}
+
+// custom news img size
+.news-img {
+  width: 135px;
+  height: 132px;
+  @include media-breakpoint-up(sm) {
+    width: 220px;
+    height: 168px;
+  }
+}
+
+// custom icon size
+.custom-icons {
+  @include media-breakpoint-down(sm) {
+    & img {
+      width: 20px;
+      height: 20px;
+    }
+    & small {
+      font-size: 12px;
+    }
+  }
+}
+
+// custom card's fontawesome size
+.card-icon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+// rfs not enable while font size < 20px so custom in here
+.fs-sm {
+  @include media-breakpoint-down(sm) {
+    font-size: 12px !important;
+  }
+}
+.fs-5 {
+  @include media-breakpoint-down(sm) {
+    font-size: 16px !important;
+  }
+}

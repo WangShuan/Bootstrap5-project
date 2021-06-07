@@ -1,48 +1,6 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-* {
-  font-family: "Noto Sans TC", sans-serif;
-}
-
-// main img 去白邊
-.rounded-32 {
-  border-radius: 32px;
-}
-
-body {
-  @include media-breakpoint-down(sm) {
-    font-size: 14px;
-  }
-}
-
-.fs-2 {
-  @include media-breakpoint-down(sm) {
-    font-size: 32px;
-  }
-}
-
-.fz-14 {
-  font-size: 14px;
-  @include media-breakpoint-down(sm) {
-    font-size: 12px;
-  }
-}
-
-.rounded-8 {
-  border-radius: 8px;
-}
-
-.ff-bt2 {
-  font-family: "Baloo Tamma 2";
-}
-
 .nav .active {
   font-weight: bold;
   border-bottom: 2px solid #ffc107;
-}
-
-.bg-lightgary {
-  background: #e8e8db;
 }
 
 .top-nav {
@@ -125,18 +83,9 @@ body {
       font-size: 12px;
     }
   }
-  &-body {
-    font-size: 16px;
-    color: #373a3c;
-    letter-spacing: 0.7px;
-  }
 }
 
 .card-icon {
   width: 30px;
   height: 30px;
-}
-
-.bg-lightwhite {
-  background-color: #fefefe;
 }

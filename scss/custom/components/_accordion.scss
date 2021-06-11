@@ -1,0 +1,25 @@
+// change accordion
+.accordion-button:not(.collapsed) {
+  background: none;
+  color: $dark;
+  &::after {
+    filter: grayscale(100%);
+  }
+}
+.accordion-button {
+  @include media-breakpoint-down(sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  & > span {
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+  }
+  &::after {
+    background-size: 14px;
+    width: 14px;
+    height: 14px;
+  }
+}

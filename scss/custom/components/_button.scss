@@ -1,0 +1,22 @@
+// change hover
+.btn-warning-hover {
+  color: $dark;
+  &:hover {
+    background-color: $danger;
+    color: #fff;
+    border-color: $danger;
+  }
+}
+.btn-outline-secondary-hover:hover {
+  &:hover {
+    background-color: $warning;
+    border-color: $warning;
+    color: $secondary;
+    & > .custom-heart {
+      color: $danger;
+    }
+  }
+  & > i {
+    color: $secondary;
+  }
+}

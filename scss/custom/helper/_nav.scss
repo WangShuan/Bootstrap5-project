@@ -1,0 +1,7 @@
+// catch nav height to use in 逼人贊助卡片區塊
+.top-nav {
+  top: 82px;
+}
+.h-100vh-nav {
+  height: calc(100vh - 82px);
+}
